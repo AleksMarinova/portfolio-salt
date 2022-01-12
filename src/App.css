@@ -9,14 +9,25 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-image: url('./desktop-background.jpg');
+    background: rgb(245, 245, 245);
+    /* background-image: url('./desktop-background.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: no-repeat; */
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: hsla(43, 100%, 49%, 1);
+}
+
+a:hover {
+    color: hsla(0, 0%, 0%, 0.69);
+    border-bottom: hsla(43, 100%, 49%, 1) solid 1px;
 }
 
 .App-header {
@@ -27,7 +38,52 @@ body{
     margin: 1em;
 }
 
-.App-header .App-title span {
+.App-header .App-title .App-title-name {
     color:hsla(43, 100%, 49%, 1);
-
 }
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2em;
+    font-size: 1.5em;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.about {
+    font-family: 'droid-sans', sans-serif;
+    margin: 1em;
+    padding: 1em;
+    height: 100%;
+}
+.about h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: hsla(0, 0%, 0%, 0.69);
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+    margin: 2em;
+    margin-left: 0.6em;
+}
+
+.projects-container h2 {
+    margin-left: 1.3em;
+}
+
+.project {
+    font-family: 'droid-sans', sans-serif;
+    margin: 1em;
+    padding: 1em;
+    height: 100%;
+}
+

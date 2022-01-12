@@ -16,9 +16,9 @@ const ProjectsContainer = () => {
     const renderProject = (arr) => {
         if (arr.github[1]){
             return <div className="project-links">You can find the client code 
-            <a href={arr.github[0]}> here </a> 
+            <a href={arr.github[0]} target="_blank" rel="noopener noreferrer"> here </a> 
             and the server code 
-            <a href={arr.github[1]}> here.</a>
+            <a href={arr.github[1]} target="_blank" rel="noopener noreferrer"> here.</a>
             </div>
         }
         return <div className="project-links">You can find the code <a href={arr.github[0]}>here</a></div>
