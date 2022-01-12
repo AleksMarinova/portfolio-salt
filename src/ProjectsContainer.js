@@ -13,6 +13,17 @@ const ProjectsContainer = () => {
             });
     }, []);
 
+    const renderProject = (arr) => {
+        if (arr.github[1]){
+            return <div className="project-links">You can find the client code 
+            <a href={arr.github[0]}> here </a> 
+            and the server code 
+            <a href={arr.github[1]}> here.</a>
+            </div>
+        }
+        return <div className="project-links">You can find the code <a href={arr.github[0]}>here</a></div>
+    }
+
     return (
         <div className="projects-container">
             <h2 className="projects-container__title">Projects</h2>
@@ -26,12 +37,9 @@ const ProjectsContainer = () => {
                         <div className="project" key={project._id}>
                             <div className="project__name">{project.name}</div>
                             <div className="project__description">{project.description}</div>
-                            <div className="project__code__link">
-                                <a href={project.github[0]} target="_blank" rel="noopener noreferrer">
-                                Code
-                                </a>
-                                {project.github[1] && <a href={project.github[1]} target="_blank" rel="noopener noreferrer">Backend code</a>}
-                            </div> 
+                            {
+                                project.github ? renderProject(project) : null
+                            }
                             <div className="project__live__link">
                                 <a href={project.live} target="_blank" rel="noopener noreferrer">  
                                 Live Demo
