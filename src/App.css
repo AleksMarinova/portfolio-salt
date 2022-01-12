@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* mix-blend-mode: difference; */
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-image: url('./desktop-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.App-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: hsla(0, 0%, 0%, 0.69);
+    font-size: 3em;
+    margin: 1em;
+}
+
+.App-header .App-title span {
+    color:hsla(43, 100%, 49%, 1);
+
+}
