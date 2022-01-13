@@ -18,13 +18,13 @@ const ProjectsContainer = () => {
 
     const renderProject = (arr) => {
         if (arr.github[1]){
-            return <div className="project-links">You can find the client code 
+            return <div className="project-links">You can check out the client code 
             <a href={arr.github[0]} target="_blank" rel="noopener noreferrer"> here </a> 
             and the server code 
-            <a href={arr.github[1]} target="_blank" rel="noopener noreferrer"> here.</a>
+            <a href={arr.github[1]} target="_blank" rel="noopener noreferrer"> here</a>.
             </div>
         }
-        return <div className="project-links">You can find the code <a href={arr.github[0]}>here</a></div>
+        return <div className="project-links">You can check out the code <a href={arr.github[0]}>here</a>.</div>
     }
 
     return (
@@ -39,7 +39,11 @@ const ProjectsContainer = () => {
                     {projects.map(project => (
                         <div className="project" key={project._id}>
                             <div className="project__name">{project.name}</div>
+                            <div className="project__image">
+                                <img src={project.imageUrl} alt={project.name} />
+                            </div>
                             <div className="project__description">{project.description}</div>
+                            <br />
                             {
                                 project.github ? renderProject(project) : null
                             }

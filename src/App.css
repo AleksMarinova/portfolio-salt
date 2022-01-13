@@ -9,7 +9,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background-image:url('./desktop-background.jpg');
+    background-image:url('./tablet-background.jpg');
     background-color:rgb(230, 214, 196);
     background-blend-mode: overlay;
     background-size: cover;
@@ -18,7 +18,6 @@ body{
     height: 100%;
 
     /* background: rgb(245, 245, 245); */
-    height: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -70,7 +69,7 @@ a.active {
     font-family: 'droid-sans', sans-serif;
     margin: 1em;
     padding: 1em;
-    height: 40vh;
+   
 }
 .about h2 {
     font-size: 2em;
@@ -99,6 +98,7 @@ a.active {
 .projects-container__title {
     font-size: 2em;
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 0.5em;
     margin-bottom: 1em;
     color: hsla(0, 0%, 0%, 0.69);
@@ -126,4 +126,27 @@ a.active {
 
 .footer .footer__icon:hover {
     color: hsla(0, 0%, 0%, 0.69);
+}
+
+.about__icon:hover {
+    color: hsla(43, 100%, 49%, 1);
+}
+
+.project__name {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    color: hsla(0, 0%, 0%, 0.69);
+    text-decoration: underline;
+    text-decoration-color: hsla(43, 100%, 49%, 1);
+}
+
+.project__image {
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.project__image img {
+    width: 100%;
+    height: auto;
 }
