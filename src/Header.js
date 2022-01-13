@@ -7,7 +7,9 @@ const Header = () => {
     return (
         <header className="App-header" 
         onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)} >
+        onMouseLeave={() => setIsHovered(false)} 
+        onClick={() => setIsHovered(!isHovered)}>
+        
             <div className="App-title">Hi, I am {
                 isHovered ? <span className="App-title-name">Александра</span> : <span className="App-title-name">Aleksandra</span>
             },</div>
