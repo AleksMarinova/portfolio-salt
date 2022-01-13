@@ -9,7 +9,15 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    background: rgb(245, 245, 245);
+    background-image:url('./desktop-background.jpg');
+    background-color:rgb(230, 214, 196);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    /* background: rgb(245, 245, 245); */
     height: 100%;
     display: flex;
     justify-content: flex-start;
