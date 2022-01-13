@@ -40,6 +40,7 @@ a:hover {
     color: hsla(0, 0%, 0%, 0.69);
     font-size: 3em;
     margin: 1em;
+    margin-top: 2em;
 }
 
 .App-header .App-title .App-title-name {
@@ -119,10 +120,10 @@ a.active {
 }
 
 .footer .footer__icon {
-    color: hsla(0, 0%, 0%, 0.69);
-    font-size: 1.5em;
+    color: hsla(43, 100%, 49%, 1);
+    font-size: 2em;
 }
 
 .footer .footer__icon:hover {
-    color: hsla(43, 100%, 49%, 1);
+    color: hsla(0, 0%, 0%, 0.69);
 }
