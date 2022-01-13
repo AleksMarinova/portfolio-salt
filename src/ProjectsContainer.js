@@ -40,7 +40,9 @@ const ProjectsContainer = () => {
                         <div className="project" key={project._id}>
                             <div className="project__name">{project.name}</div>
                             <div className="project__image">
+                                <a href = {project.live} target="_blank" rel="noopener noreferrer">
                                 <img src={project.imageUrl} alt={project.name} />
+                                </a>
                             </div>
                             <div className="project__description">{project.description}</div>
                             <br />
