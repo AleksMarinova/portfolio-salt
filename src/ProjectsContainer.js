@@ -1,16 +1,19 @@
 import { React, useState, useEffect } from 'react';
+import data from './projects';
 
 const ProjectsContainer = () => {
     const [projects, setProjects] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://portfolio-server-express.herokuapp.com/')
-            .then(response => response.json())
-            .then(data => {
-                setProjects(data);
-                setIsLoading(false);
-            });
+        setProjects(data);
+        setIsLoading(false);
+        // fetch('https://portfolio-server-express.herokuapp.com/')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         setProjects(data);
+        //         setIsLoading(false);
+        //     });
     }, []);
 
     const renderProject = (arr) => {
