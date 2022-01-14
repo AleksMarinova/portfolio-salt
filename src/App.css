@@ -154,7 +154,54 @@ a.active {
     border-radius: 2px;
 }
 
-.project__image a:hover{
+.projects .project .project__image a:hover{
     text-decoration: none;
-    
+}
+
+/* tablet view */
+@media screen and (min-width: 768px){
+    .App-header {
+        font-size: 4em;
+        max-width: 50%;
+    }
+    .navbar {
+        font-size: 2em;
+    }
+    .navbar__list{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about {
+        font-size: 1em;
+        margin-bottom: 3em;
+    }
+
+    .about h2 {
+        font-size: 2em;
+    }
+
+    .about p {
+        font-size: 1.5em;
+    }
+
+    .footer .footer__icon {
+        font-size: 3em;
+    }
+
+    .projects-container{
+        font-size: 1em;
+    }
+
+    .projects {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .project {
+        width: 50%;
+    }
 }
