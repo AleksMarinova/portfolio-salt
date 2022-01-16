@@ -1,0 +1,41 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+}
+
+.skills-container div {
+   margin-bottom: 0.5em;
+}
+
+.skills-container .skills-container__header {
+    font-size: 2em;
+  text-align: right;
+  font-family: 'Hallandale';
+ padding-right: 1em;
+ width: 100%;
+  background-color: rgba(38, 29, 18, 1);
+  color:rgb(222,205,185);
+}
+
+.skills-container__icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Editorial New Regular';
+}
+
+.skills-container__icons-container__icon-container{
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.skills-container__icons-container__icon-container div {
+    margin-left: 0.5em;
+}

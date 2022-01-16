@@ -1,0 +1,13 @@
+.hero {
+    font-family: 'Hallandale';
+    background-color: rgba(38, 29, 18, 1);
+    color: rgb(222,205,185);
+    font-size: 3em;
+    display: inline-block;
+    transform: scale(1, 2);
+    line-height: 0.85;
+    padding-top: 0.1em;
+    text-align: center;
+    margin: 0.5em;
+    margin-top: 1em;
+  }
