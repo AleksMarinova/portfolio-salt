@@ -1,256 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'Editorial New Regular';
+    src: local("Editorial New Regular"),
+    url('./fonts/PPEditorialNew-Regular.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'Editorial New Ultralight';
+    src: local("Editorial New Ultralight"),
+    url('./fonts/PPEditorialNew-Ultralight.otf') format('opentype');
+  }
+  
+  @font-face{
+    font-family: 'The Bjorke';
+    src: local("The Bjorke"),
+    url('./fonts/The-Bjorke.ttf') format('opentype');
+  }
+  
+  @font-face{
+    font-family:'Hallandale';
+    src:local('Hallandale'),
+    url('./fonts/HallandaleDeco.ttf') format('truetype');
+  }
+  
+  
+  /*
+    1. Use a more-intuitive box-sizing model.
+  */
+  *, *::before, *::after {
     box-sizing: border-box;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    background-image:url('./tablet-background.jpg');
-    background-color:rgb(230, 214, 196);
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+  html {
+    background: url('./img/background.jpg') no-repeat center center fixed;
+    background-color:rgb(206, 193, 179);
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100%;
-
-    /* background: rgb(245, 245, 245); */
+    font-family: 'Editorial New Regular';
+  }
+  
+  .App {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-}
-
-a {
-    text-decoration: none;
-    color: hsla(43, 100%, 49%, 1);
-}
-
-a:hover {
-    color: hsla(0, 0%, 0%, 0.69);
-    border-bottom: hsla(43, 100%, 49%, 1) solid 1px;
-}
-
-.App-header {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: hsla(0, 0%, 0%, 0.69);
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .App-header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'The Bjorke';
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    border-bottom: 1px solid rgba(53, 18, 18, 0.2);
+    font-size: 1.5em;
+    margin:0;
+    margin-top: 0.5em;
+  }
+  
+  .content{
+    font-size: 1em;
+    font-family: 'Editorial New Regular';
+    padding: 1em;
+  }
+  
+  .hero {
+    font-family: 'Hallandale';
+    background-color: black;
+    color: rgb(222,205,185);
     font-size: 3em;
-    margin: 1em;
-    margin-top: 2em;
-}
-
-.App-header .App-title .App-title-name {
-    color:hsla(43, 100%, 49%, 1);
-}
-
-
-.navbar {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 2em;
-    font-size: 1.5em;
-}
-
-.navbar ul {
-    list-style-type: none;
-}
-
-
-a.active {
-   color: hsla(0, 0%, 0%, 0.69);
-   border-bottom: hsla(43, 100%, 49%, 1) solid 1px;
-}
-
-.about {
-    font-family: 'droid-sans', sans-serif;
-    margin: 1em;
-    padding: 1em;
-   
-}
-.about h2 {
-    font-size: 2em;
-    font-weight: 600;
-    margin-left: .5em;
-    margin-bottom: 1em;
-    color: hsla(0, 0%, 0%, 0.69);
-}
-
-.about p {
-    margin-left: 1em;
-    overflow-wrap: break-word;
-}
-
-.about-icons-header{
-    margin-left: 1em;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-weight: 600;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    display: inline-block;
+    transform: scale(1, 2);
+    line-height: 0.85;
+    padding-top: 0.1em;
     text-align: center;
-    color: hsla(0, 0%, 0%, 0.89);
-    background-color: hsla(43, 100%, 49%, 0.69);
-}
-
-.about-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    padding-bottom: 1em;
-    font-size: 1em;
-    flex-wrap: wrap;
-    border-bottom: hsla(43, 100%, 49%, 0.69) solid 0.5em;
-}
-
-.about-icon {
-    width: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    margin: 0.5em;
     margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    
-}
-
-.about-icon .icon {
-    font-size: 1.5em;
-}
-
-.about-icon div {
-    margin-left: 0.5em;
-    font-size: 1em;
-}
-
-.projects-container {
+  }
+  
+  .navbar{
     display: flex;
-    justify-content: center;
-    align-items: right;
-    flex-direction: column;
-    /* margin: 2em; */
-    font-family: 'droid-sans', sans-serif;
-    margin:1em;
-    padding: 1em;
-    height: 100%;
-}
-
-.projects-container__title {
-    font-size: 2em;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 0.5em;
-    margin-bottom: 1em;
-    color: hsla(0, 0%, 0%, 0.69);
-    font-family: 'droid-sans', sans-serif;
-}
-
-.project{
-    margin-bottom: 1em;
-    padding: 1em;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin: 1em;
-    margin-top: auto;
-    margin-bottom: 2em;
-}
-
-.footer .footer__icon {
-    color: hsla(43, 100%, 49%, 1);
-    font-size: 2em;
-}
-
-.footer .footer__icon:hover {
-    color: hsla(0, 0%, 0%, 0.69);
-}
-
-.about__icon:hover {
-    color: hsla(43, 100%, 49%, 1);
-}
-
-.project__name {
+    justify-content: space-around;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(53, 18, 18, 0.2);
+    font-size: 1em;
+    font-family: 'Hallandale';
+    flex-wrap: wrap;
+  }
+  
+  .navbar div {
+    width: 40%;
     font-size: 1.5em;
-    font-weight: 500;
-    margin-bottom: 1em;
-    color: hsla(0, 0%, 0%, 0.69);
-    text-decoration: underline;
-    text-decoration-color: hsla(43, 100%, 49%, 1);
-}
-
-.project__image {
-    height: auto;
-    margin-bottom: 1em;
-}
-
-.project__image img {
-    width: 100%;
-    height: 100%;
-    -webkit-box-shadow: 6px 7px 13px -1px rgba(0,0,0,0.69); 
-    box-shadow: 6px 7px 13px -1px rgba(0,0,0,0.20);
-    border-radius: 2px;
-}
-
-.projects .project .project__image a:hover{
-    text-decoration: none;
-}
-
-/* tablet view */
-@media screen and (min-width: 768px){
-    .App-header {
-        font-size: 4em;
-        max-width: 50%;
-    }
-    .navbar {
-        font-size: 2em;
-    }
-    .navbar__list{
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .about {
-        font-size: 1em;
-        margin-bottom: 3em;
-    }
-
-    .about h2 {
-        font-size: 2em;
-    }
-
-    .about p {
-        font-size: 1.5em;
-    }
-
-    .footer .footer__icon {
-        font-size: 3em;
-    }
-
-    .projects-container{
-        font-size: 1em;
-    }
-
-    .projects {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .project {
-        width: 50%;
-    }
-}
-
-/* desktop view */
-@media screen and (min-width: 1024px){
-
-
-}
+  }
