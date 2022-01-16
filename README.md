@@ -1,2 +1,2 @@
 My portfolio is a place to showcase my work and to share my thoughts.
-check it out at https://amarinova.herokuapp.com
+check it out at https://amarinova.com [![Netlify Status](https://api.netlify.com/api/v1/badges/7c73dfde-1677-4062-899b-9ce868c8e839/deploy-status)](https://app.netlify.com/sites/amarinova/deploys)
