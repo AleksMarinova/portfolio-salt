@@ -16,7 +16,19 @@
 .hero-info .hero-info__subheader{
   width: 100%;
   word-break: break-word;
-  font-size: 1.5em;
+  font-size: 2em;
   line-height:0.9;
-  font-family: 'Editorial New Regular';
+  font-family: 'Hallandale';
+  color: var(--dark-charcoal);
+  margin-bottom: 0.5em;
+  border-bottom: var(--gray) solid 1px;
+  padding-bottom: 0.2em;
+}
+
+.hero-info .hero-info__subheader:last-child{
+  margin-bottom: 0;
+  color: var(--silver);
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 1em;
 }

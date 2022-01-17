@@ -1,0 +1,17 @@
+.contacts {
+    border-top: 1px solid var(--gray);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: 'Hallandale';
+}
+
+.contacts .contact-item a{
+    display: inline-block;
+    transform: scale(0.8, 1.8);
+    padding: 0.5em;
+
+}

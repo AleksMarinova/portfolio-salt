@@ -1,7 +1,7 @@
 
 .about-container{
     margin: 1.5em;
-    
+    margin-top: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -16,16 +16,16 @@
 
 .about-container .about-container__header {
   font-size: 2em;
-  text-align: left;
+  text-align: center;
   font-family: 'Hallandale';
- padding-left: 1em;
- width: 100%;
-  background-color: rgba(38, 29, 18, 1);
-  color:rgb(222,205,185);
+  
+  width: 100%;
+  background-color: var(--dark-charcoal);
+  color: var(--bright-gray);
 }
 
 .about-container .about-container__content div {
-    border-bottom: 1px solid rgba(53, 18, 18, 0.2);
+    border-bottom: var(--gray) solid 1px;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     margin-bottom: 0.5em;
@@ -35,7 +35,7 @@
 .about-container__content__text__first-letter{
     font-size: 2em;
     font-family: 'The Bjorke';
-    color: rgba(38, 29, 18, 1);
+    color: var(--dark-charcoal);
     margin:0;
     padding:0;
 }

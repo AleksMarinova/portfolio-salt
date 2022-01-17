@@ -3,7 +3,10 @@ import '../styles/HeroInfo.css'
 const HeroInfo = () => {
    return ( 
       <div className="hero-info">
-         <div className="hero-info__subheader">Hello, I am a Oslo based linguist with passion for tech and innovation.</div>
+         <div className="hero-info__subheader">REACT AFICIONADO</div>
+         <div className="hero-info__subheader">NODE CONNOSSEUR</div>
+         <div className="hero-info__subheader">TDD DEVOTEE</div>
+         <div className="hero-info__subheader">Express, Redux, GraphQL, MongoDB, PostgreSQL, Mocha, Jest, Supertest</div>
       </div>
    )
 }

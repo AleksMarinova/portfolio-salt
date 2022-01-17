@@ -1,11 +1,11 @@
 .App-header{
     display: flex;
-   width: 100%;
+    width: 100%;
     font-family: 'The Bjorke';
     align-items: center;
     justify-content: center;
     padding: 0.3em;
-    border-bottom: 1px solid rgba(53, 18, 18, 0.2);
+    border-bottom: 1px solid var(--gray);
     font-size: 1.5em;
     margin:0;
     margin-top: 0.5em;

@@ -21,6 +21,14 @@
     src:local('Hallandale'),
     url('./fonts/HallandaleDeco.ttf') format('truetype');
   }
+
+  :root{
+    --bright-gray: #EEEEEE;
+    --light-gray: #DDDDDD;
+    --silver: #CCCCCC;
+    --gray: #BBBBBB;
+    --dark-charcoal: #333333;
+  }
   
   
   /*
@@ -77,13 +85,13 @@
   }
   
   html {
-    background: url('./img/background.jpg') no-repeat center center fixed;
-    background-color:rgb(206, 193, 179);
+    /* background: url('./img/background.jpg') no-repeat center center fixed; */
+    background-color:var(--bright-gray);
     background-blend-mode: overlay;
     background-size: cover;
     height: 100%;
     font-family: 'Editorial New Ultralight';
-    color: rgba(38, 29, 18, 1);
+    color: var(--dark-charcoal);
   }
   
   .App {
