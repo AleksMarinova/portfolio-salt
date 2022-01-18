@@ -101,6 +101,19 @@
     justify-content: center;
     gap: 1em;
   }
+
+  /* tablet view */
+
+  @media only screen and (min-width: 768px) {
+    .App{
+      max-height: 100vh;
+      display:grid;
+      align-items: start;
+      grid-template-rows: auto 300px 1fr 1fr 1fr 1fr auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+    }
+  }
     
   
   

@@ -39,3 +39,25 @@
     margin:0;
     padding:0;
 }
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .about-container .about-container__content{
+       display: flex;
+    }
+
+    .about-container .about-container__content div {
+        border-bottom: none;
+        padding: 0.5em;
+        padding-bottom: 0;
+    }
+
+}

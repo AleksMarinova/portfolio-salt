@@ -49,3 +49,22 @@
 .skills-container__icons-container__icon-container .icon {
     color: var(--gray);
 }
+
+@media screen and (min-width: 768px) {
+    .skills-container {
+        margin-top: 0.2em;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        border-bottom:none;
+    }
+    .skills-container .skills-container__header{
+        margin-bottom: 1em;
+        font-size: 2.5em;
+        line-height: 0.9;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+       
+    }
+}
