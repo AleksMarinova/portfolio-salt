@@ -68,3 +68,34 @@
        
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .skills-container {
+       grid-column-start: 3;
+       grid-column-end: 5;
+       grid-row-start: 2;
+         grid-row-end: 4;
+    }
+    .skills-container__icons-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills-container .skills-container__header{
+        font-size: 2em;
+        padding-top: 0.2em;
+        padding-bottom: 0.3em;
+        margin-top: 0.2em;
+    }
+
+    .skills-container__icons-container__icon-container{
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
+        font-size: 1.4em;
+        font-family:'Editorial New Regular';
+    }
+    
+}

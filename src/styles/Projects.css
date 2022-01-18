@@ -96,3 +96,26 @@ a {
         margin: auto;
     }
 }
+
+@media screen and (min-width: 1024px){
+    .projects {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+
+    .projects .projects-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .projects .projects-container .project {
+        width: 40%;
+        margin: auto;
+    }
+}
+    

@@ -26,7 +26,7 @@ const data = [{
       "$oid": "61ddca20b791aa22dce30323"
     },
     "name": "React ToDo",
-    "imageUrl":"https://i.postimg.cc/hjxsv0c8/todo.png",
+    "imageUrl":"https://i.postimg.cc/Xv58594K/Screenshot-2022-01-18-at-18-43-28.png",
     "description": "A minimalistic todo app built with React.",
     "github": [
       "https://github.com/AleksMarinova/salt-react-todo"
@@ -37,7 +37,7 @@ const data = [{
       "$oid": "61ddcc5db791aa22dce30324"
     },
     "name": "ToDo app with React and Redux",
-    "imageUrl":"https://i.postimg.cc/C5s4HLZz/redux.png",
+    "imageUrl":"https://i.postimg.cc/DwyH1jMr/Screenshot-2022-01-18-at-18-40-27.png",
     "description": "A minimalistic React todo app that uses Redux for state management.",
     "github": [
       "https://github.com/AleksMarinova/redux-todo"

@@ -11,7 +11,7 @@
     margin-top: 0.5em;
   }
 
-  /* tablet view */
+ 
   @media (min-width: 768px) {
     .App-header{
       font-size: 2em;
@@ -21,3 +21,12 @@
       grid-row-end: 2;
     }
   }
+ @media  screen and (min-width: 1024px){
+   .App-header{
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+   }
+ }
+  

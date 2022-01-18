@@ -24,4 +24,14 @@
         grid-row-end: 7;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .contacts {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+}
+
     

@@ -114,6 +114,32 @@
       
     }
   }
+
+  @media only screen and (min-width: 1024px){
+    .App {
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      grid-template-rows:  auto 300px auto auto auto auto auto;
+      /* grid-template-rows: auto 300px 1fr 1fr 1fr 1fr auto; */
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .App {
+      margin:0 10%;
+      grid-template-columns: 1fr 2fr 1fr 1fr;
+      grid-template-rows:  auto 300px auto auto auto auto auto;
+      /* grid-template-rows: auto 300px 1fr 1fr 1fr 1fr auto; */
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    .App {
+      margin:0 20%;
+    }
+  }
+    
+    
+  
     
   
   
