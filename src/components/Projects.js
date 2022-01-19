@@ -33,7 +33,7 @@ const Projects = () => {
             <div className="projects-container">
                 { projects && projects.map(project => {
                         return (
-                            <div className="project" key={project._id.$oid}>
+                            <div className="project" key={project._id}>
                                 <div className="project-name">
                                     <div>{project.name}</div>  
                                 </div>  
