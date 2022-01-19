@@ -1,12 +1,17 @@
 import '../styles/Projects.css';
 import { useState,useEffect } from 'react';
-import data from '../data/projects.js';
+// import data from '../data/projects.js';
 
 const Projects = () => {
     const [projects, setProjects] = useState();
 
     useEffect(() => {
-        setProjects(data);
+        const fetchData = async () => {
+            const response = await fetch('https://portfolio-server-express.herokuapp.com/');
+            const json = await response.json();
+            setProjects(json);
+        }
+        fetchData();
     }, []);
 
     const renderCodeLinks = (codeLinks) => {

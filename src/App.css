@@ -30,62 +30,41 @@
     --dark-charcoal: #333333;
   }
   
-  
-  /*
-    1. Use a more-intuitive box-sizing model.
-  */
   *, *::before, *::after {
     box-sizing: border-box;
   }
-  /*
-    2. Remove default margin
-  */
+
   * {
     margin: 0;
   }
-  /*
-    3. Allow percentage-based heights in the application
-  */
+  
   html, body {
     height: 100%;
   }
-  /*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
+  
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
-  /*
-    6. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
+  
+  img {
     display: block;
     max-width: 100%;
   }
-  /*
-    7. Remove built-in form typography styles
-  */
+  
   input, button, textarea, select {
     font: inherit;
   }
-  /*
-    8. Avoid text overflows
-  */
+  
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
   }
-  /*
-    9. Create a root stacking context
-  */
+  
   #root, #__next {
     isolation: isolate;
   }
   
   html {
-    /* background: url('./img/background.jpg') no-repeat center center fixed; */
     background-color:var(--bright-gray);
     background-blend-mode: overlay;
     background-size: cover;
@@ -102,8 +81,6 @@
     gap: 1em;
   }
 
-  /* tablet view */
-
   @media only screen and (min-width: 768px) {
     .App{
       max-height: 100vh;
@@ -119,7 +96,6 @@
     .App {
       grid-template-columns: 1fr 2fr 1fr 1fr;
       grid-template-rows:  auto 300px auto auto auto auto auto;
-      /* grid-template-rows: auto 300px 1fr 1fr 1fr 1fr auto; */
     }
   }
 
@@ -128,7 +104,6 @@
       margin:0 10%;
       grid-template-columns: 1fr 2fr 1fr 1fr;
       grid-template-rows:  auto 300px auto auto auto auto auto;
-      /* grid-template-rows: auto 300px 1fr 1fr 1fr 1fr auto; */
     }
   }
 

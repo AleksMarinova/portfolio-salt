@@ -12,8 +12,6 @@
     margin-top: 1em;
   }
 
-  /* tablet view */
-
   @media screen and (min-width: 768px) {
     .hero {
       font-size: 4.5em;
