@@ -35,7 +35,7 @@ const Projects = () => {
                         return (
                             <div className="project" key={project._id}>
                                 <div className="project-name">
-                                    <div>{project.name}</div>  
+                                    <a href={project.live} target="_blank" rel="noopener noreferrer">{project.name}</a>  
                                 </div>  
                                 <div className="project-image">
                                     <img src={project.imageUrl} alt={project.name} />
