@@ -23,7 +23,7 @@ const Projects = () => {
             )
         }
         return (
-            <div>The code can be found <a href={codeLinks[0]} rel="noopener noreferrer">here.</a></div>
+            <div>The code can be found <a href={codeLinks[0]} target='_blank' rel="noopener noreferrer">here.</a></div>
         )    
     }
 
